@@ -4,18 +4,17 @@ A React component that renders text with a typewriter effect and customizable ed
 
 ## Installation
 
-Download the pretty-chat compressed archive file. 
+Download the pretty-chat tgz file. 
 
-Put the pretty-chat compressed archive file into your project folder.
+Put the pretty-chat tgz file into your project folder.
 Add a line to your project's dependencies to include the file.
 
 ```json
 "dependencies": {
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0",
   "pretty-chat": "file:pretty-chat-1.0.0.tgz",
 }
 ```
+
 Then install the package:
 `npm install pretty-chat`
 
