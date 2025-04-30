@@ -21,6 +21,8 @@
     "scripts": {
         "clean": "rm -rf dist",
         "build": "npm run clean && tsc && vite build",
+        "postbuild": "cp README.md dist/ && cp LICENSE.md dist/",
+        "prep": "npm run build && npm run postbuild",
         "dev": "vite",
         "preview": "vite preview"
     },

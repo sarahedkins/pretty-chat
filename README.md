@@ -44,7 +44,7 @@ Use the 3 helper functions to feed chunks of streaming text to your typewriter.
 
 ```typescript
  const handleSendMessage = () => {
-        // hand an interupt by closing the current stream before sending new message
+        // handle an interrupt by closing the current stream before sending new message
         if (eventSourceRef.current) {
             eventSourceRef.current.close();
             eventSourceRef.current = null;
