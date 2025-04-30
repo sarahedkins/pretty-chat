@@ -80,7 +80,11 @@ export const Typewriter = ({
                                 const markdownSegment = markdownBuilder.join("");
                                 return (
                                     <span key={i} className="inline">
-                                        <ReactMarkdown>{markdownSegment}</ReactMarkdown>
+                                        <ReactMarkdown
+                                            components={{
+                                                'p': 'span'
+                                            }}
+                                        >{markdownSegment}</ReactMarkdown>
                                     </span>
                                 );
                             } else {
