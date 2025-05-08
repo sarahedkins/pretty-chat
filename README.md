@@ -119,3 +119,11 @@ Customize it by passing in edgeColor, restColor, and duration.
     })}
  </div>
 ```
+
+## Modifying PrettyChat source code
+
+You are welcome to modify PrettyChat. 
+This may be required if there is a maintenance issue, or you require added functionality or more specific styling for your application.
+
+After modifying the source code, you can run `npm run prep` to rebuild the package.
+ Then run `npm run pack` to generate a new tgz file which you can install into your main application. 
