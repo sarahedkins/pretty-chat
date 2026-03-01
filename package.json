@@ -2,8 +2,8 @@
     "name": "pretty-chat",
     "version": "1.0.0",
     "description": "Typewriter effect React component",
-    "license": "SEE LICENSE IN LICENSE.md",
-    "author": "TekCouture",
+    "license": "MIT",
+    "author": "Sarah Edkins",
     "type": "module",
     "files": [
         "dist"
