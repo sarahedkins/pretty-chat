@@ -4,19 +4,37 @@ A React component that renders text with a typewriter effect and customizable ed
 
 ## Installation
 
-Download the pretty-chat tgz file. 
+Pretty-chat is not published to npm. Install it from the package source by building a tgz and adding it to your project.
 
-Put the pretty-chat tgz file into your project folder.
-Add a line to your project's dependencies to include the file.
+### 1. Build the package (from the pretty-chat repo)
+
+In the pretty-chat package directory:
+
+```bash
+npm install
+npm run build
+npm pack
+```
+
+(`npm run prep` runs build plus copying README/LICENSE into `dist`; use it if you prefer.) This creates `pretty-chat-1.0.0.tgz` in the pretty-chat folder.
+
+### 2. Install into your project
+
+Copy `pretty-chat-1.0.0.tgz` into your project folder (or keep it elsewhere and use the path below). Add the dependency to your project's `package.json`:
 
 ```json
 "dependencies": {
-  "pretty-chat": "file:pretty-chat-1.0.0.tgz",
+  "pretty-chat": "file:pretty-chat-1.0.0.tgz"
 }
 ```
 
-Then install the package:
-`npm install pretty-chat`
+If the tgz lives outside your project (e.g. a sibling folder), use a path like `file:../pretty-chat/pretty-chat-1.0.0.tgz`.
+
+Then install:
+
+```bash
+npm install
+```
 
 ## Getting started
 
